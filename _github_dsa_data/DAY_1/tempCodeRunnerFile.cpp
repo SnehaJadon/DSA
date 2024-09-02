@@ -1,0 +1,1 @@
+checkIfSorted(arr) == 1

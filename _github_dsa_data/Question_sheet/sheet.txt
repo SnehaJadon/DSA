@@ -1,0 +1,42 @@
+//ARRAY
+
+1-sep-2024
+
+1. Largest element in ARRAY
+https://www.geeksforgeeks.org/problems/largest-element-in-array4009/0?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=largest-element-in-array
+
+2. Second largest in array
+https://www.geeksforgeeks.org/problems/second-largest3735/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=second-largest
+
+3. check if array is sorted or not.
+https://www.naukri.com/code360/problems/ninja-and-the-sorted-check_6581957?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=SUBMISSION
+
+4. Remove duplicates from sorted array.
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
+2-sep-2024
+
+5. Rotate an array to the left  
+https://www.naukri.com/code360/problems/left-rotate-an-array-by-one_5026278?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=SUBMISSION
+
+6. Rotate an array to the right by k places
+https://www.naukri.com/code360/problems/rotate-array_1230543?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=SUBMISSION
+
+7.  Rotate an array to the right by k places
+https://leetcode.com/problems/rotate-array/
+
+8. Move zeroes to end
+https://leetcode.com/problems/move-zeroes/
+
+9. Linear search
+https://www.geeksforgeeks.org/problems/who-will-win-1587115621/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=who-will-win
+
+10. union of two sorted arrays
+https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=union-of-two-sorted-arrays
+
+11. Intersection of two sorted arrays
+https://www.naukri.com/code360/problems/intersection-of-2-arrays_1082149?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=SUBMISSION
+
+12. Intersection of two arrays
+https://leetcode.com/problems/intersection-of-two-arrays/
+
