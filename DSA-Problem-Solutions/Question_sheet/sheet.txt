@@ -40,3 +40,19 @@ https://www.naukri.com/code360/problems/intersection-of-2-arrays_1082149?utm_sou
 12. Intersection of two arrays
 https://leetcode.com/problems/intersection-of-two-arrays/
 
+3|09|24
+
+13. Missing number in the array.
+https://leetcode.com/problems/missing-number/
+
+14. Maximum consecutive ones
+https://leetcode.com/problems/max-consecutive-ones/
+
+15. Find the number that appears once, and other numbers twice.
+https://leetcode.com/problems/single-number/
+
+16. Longest subarray with sum k
+https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=longest-sub-array-with-sum-k
+
+17.  Total number of subarrays whose sum equals to k.
+https://leetcode.com/problems/subarray-sum-equals-k/description/
