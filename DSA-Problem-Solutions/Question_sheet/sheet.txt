@@ -56,3 +56,26 @@ https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1?utm_so
 
 17.  Total number of subarrays whose sum equals to k.
 https://leetcode.com/problems/subarray-sum-equals-k/description/
+
+
+4|09|24
+
+18. Two sum
+https://leetcode.com/problems/two-sum/description/
+
+19. Sort 0s, 1s and 2s
+https://leetcode.com/problems/sort-colors/
+
+20. Majority element appears more than n/2 times
+https://leetcode.com/problems/majority-element/description/
+
+21. Maximum subarray / kadane's algorithm
+https://leetcode.com/problems/maximum-subarray/description/
+
+22. Best Time to Buy and Sell Stock
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+
+23. Rearrange Array Elements by Sign
+https://leetcode.com/problems/rearrange-array-elements-by-sign/description/
+
+https://www.naukri.com/code360/problems/alternate-numbers_6783445
