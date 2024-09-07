@@ -104,3 +104,26 @@ https://leetcode.com/problems/pascals-triangle/description/
 29. Merge sorted array
 https://leetcode.com/problems/merge-sorted-array/description/
 
+7|09|24
+
+30. Merge intervals
+https://leetcode.com/problems/merge-intervals/description/
+
+31. Majority element II
+https://leetcode.com/problems/majority-element-ii/description/
+
+32. 3 sum
+https://leetcode.com/problems/3sum/description/
+
+33. 4 sum
+https://leetcode.com/problems/4sum/description/
+
+34. Longest Consecutive sequence
+https://leetcode.com/problems/longest-consecutive-sequence/description/
+
+35. Maximum product subarray
+https://leetcode.com/problems/maximum-product-subarray/description/
+
+36. Repeating and missing number
+https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=find-missing-and-repeating
+
