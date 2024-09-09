@@ -1,0 +1,143 @@
+https://leetcode.com/problems/set-matrix-zeroes/description/
+
+brute
+TC --> (n*m) * (n+m) + (n*m) --> n^3
+
+class Solution {
+public:
+
+    void setColToZero(vector<vector<int>>& matrix, int c, int n){
+        for(int i=0; i<n; i++){
+            if(matrix[i][c] != 0){
+                matrix[i][c] = -1;
+            }
+        }
+        
+    }
+    void setRowToZero(vector<vector<int>>& matrix, int r, int m){
+        for(int i=0; i<m; i++){
+            if(matrix[r][i] != 0){
+                matrix[r][i] = -1;
+            }
+        }
+        
+    }
+    void setZeroes(vector<vector<int>>& matrix) {
+
+        int n = matrix.size();
+        int m = matrix[0].size();
+
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                if(matrix[i][j] == 0){
+                    setColToZero(matrix, j, n);
+                    setRowToZero(matrix, i, m);
+                }
+            }
+        }
+
+
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                if(matrix[i][j] == -1){
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+        
+    }
+};
+
+#############################################################################################
+
+Better 
+TC--> n*m + n*m --> n^2
+SC --> n + m
+
+class Solution {
+public:
+
+    void setZeroes(vector<vector<int>>& matrix) {
+
+        int n = matrix.size();
+        int m = matrix[0].size();
+
+        vector<int> row(n,0);
+        vector<int> col(m,0);
+
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                if(matrix[i][j] == 0){
+                    row[i] = 1;
+                    col[j] = 1;
+                }
+            }
+        }
+
+
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                if(row[i] || col[j]){
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+        
+    }
+};
+
+#############################################################################################
+
+optimal without using extra space inplace
+TC--> n^2 without using extra space
+
+class Solution {
+public:
+
+    void setZeroes(vector<vector<int>>& matrix) {
+
+        int n = matrix.size();
+        int m = matrix[0].size();
+
+
+        // vector<int> row(n,0);... matrix [...][0]
+        // vector<int> col(m,0);.... matrix [0][...]
+
+        int col0 = 1;
+
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                if(matrix[i][j] == 0){
+                    // row[i] = 1;
+                    matrix[i][0] = 0;
+                    // col[j] = 1;
+                    if(j != 0) matrix [0][j] = 0;
+                    else col0 = 0;
+                }
+            }
+        }
+
+        //first check matrix except vis row and col
+        for(int i=1; i<n; i++){
+            for(int j=1; j<m; j++){
+                if(matrix [i][j] != 0 ){
+                    //check for row and col
+                    if(matrix[i][0] == 0 || matrix[0][j] == 0){
+                        matrix[i][j] = 0;
+                    }
+                }
+            }
+        }
+
+        //second check the row
+        if(matrix[0][0] == 0){
+            for(int j=0; j<m; j++) matrix[0][j] = 0;
+        }
+
+        //third check for the col
+        if(col0 == 0){
+            for(int i=0; i<n; i++) matrix[i][0] = 0;
+        }
+        
+    }
+};
