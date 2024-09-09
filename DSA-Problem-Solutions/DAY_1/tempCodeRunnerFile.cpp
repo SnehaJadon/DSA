@@ -1,1 +1,0 @@
-checkIfSorted(arr) == 1
