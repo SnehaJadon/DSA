@@ -1,0 +1,21 @@
+11|09|24
+
+Day - 1 
+Implementation of a LL.
+Insertion / deletion of a LL.
+Traversal
+
+1. Delete the Middle Node of a Linked List
+https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/
+
+2. Reverse Linked List
+https://leetcode.com/problems/reverse-linked-list/description/
+
+3. Middle of the Linked List
+https://leetcode.com/problems/middle-of-the-linked-list/
+
+4. Linked list cycle
+https://leetcode.com/problems/linked-list-cycle/description/
+
+5. Palindrome linked list
+https://leetcode.com/problems/palindrome-linked-list/
