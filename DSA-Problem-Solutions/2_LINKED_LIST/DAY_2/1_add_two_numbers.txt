@@ -1,0 +1,64 @@
+https://leetcode.com/problems/add-two-numbers/
+
+
+//extreme brute force that comes first.
+class Solution {
+public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        ListNode* ans = new ListNode();
+        ListNode* temp = ans;
+        ListNode* first = l1;
+        ListNode* second = l2;
+        int carry = 0;
+        while(first && second){
+            int sum = first->val + second->val + carry;
+            if(sum > 9){
+                carry = sum/10;
+                sum = sum%10;
+            } 
+            else{
+                carry = 0;
+            }
+            ListNode* node = new ListNode(sum);
+            ans->next = node;
+            first = first->next;
+            second = second->next;
+            ans = ans->next; 
+        }
+
+        while(first){
+            int sum = first->val + carry;
+            if(sum > 9){
+                carry = sum/10;
+                sum = sum%10;
+            } else{
+                carry = 0;
+            }
+           ListNode* node = new ListNode(sum);
+            ans->next = node;
+            first = first->next;
+            ans = ans->next;
+        }
+        
+        while(second){
+            int sum = second->val + carry;
+            if(sum > 9){
+                carry = sum/10;
+                sum = sum%10;
+            } 
+            else{
+                carry = 0;
+            }
+           ListNode* node = new ListNode(sum);
+            ans->next = node;
+            second = second->next;
+            ans = ans->next;
+        }
+
+        if(carry){
+           ListNode* node = new ListNode(carry);
+           ans->next = node;
+        }
+        return temp->next;
+    }
+};

@@ -1,0 +1,55 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* brute(ListNode* head, int n){
+        ListNode* temp=head;
+        int len=0;
+        while(temp){
+            len++;
+            temp=temp->next;
+        }
+        temp=head;
+        if(n == len){
+            head=head->next;
+            return head;
+        }
+
+        for(int i=1;i<len-n;i++){
+            temp=temp->next;
+        }
+        ListNode* todlt = temp->next;
+        temp->next=temp->next->next;
+        delete todlt;
+        return head;
+    }
+
+    //Two pointer Approch
+    ListNode* optimal(ListNode* head, int n){
+        ListNode* dummy = new ListNode();
+        dummy->next = head;
+        ListNode* slow = dummy, *fast=dummy;
+        for(int i=1;i<=n;i++){
+            fast=fast->next;
+        }
+        while(fast->next != NULL){
+            slow=slow->next;
+            fast=fast->next;
+        }
+        slow->next = slow->next->next;
+        return dummy->next;
+    }
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+     ListNode* ans=brute(head, n);
+    //  ListNode* ans=optimal(head, n);
+     return ans;   
+    }
+};
