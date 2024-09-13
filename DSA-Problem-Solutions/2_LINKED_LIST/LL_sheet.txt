@@ -14,8 +14,8 @@ https://leetcode.com/problems/reverse-linked-list/description/
 3. Middle of the Linked List
 https://leetcode.com/problems/middle-of-the-linked-list/
 
-4. Linked list cycle
-https://leetcode.com/problems/linked-list-cyc   le/description/
+4. Linked list cycle (Determine if the linked list has a cycle in it.)
+https://leetcode.com/problems/linked-list-cycle/description/
 
 5. Palindrome linked list
 https://leetcode.com/problems/palindrome-linked-list/
@@ -31,3 +31,15 @@ https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 
 8. Reverse Nodes in k-Group
 https://leetcode.com/problems/reverse-nodes-in-k-group/description/
+
+Day - 3
+13|09|24
+
+9. Linked List cycle II (Return the node where the cycle begins. If there is no cycle, return null).
+https://leetcode.com/problems/linked-list-cycle-ii/
+
+10. Rotate List.
+https://leetcode.com/problems/rotate-list/description/
+
+11. Intersection of two linked list.
+https://leetcode.com/problems/intersection-of-two-linked-lists/description/

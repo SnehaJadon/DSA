@@ -1,0 +1,74 @@
+https://leetcode.com/problems/intersection-of-two-linked-lists/description/
+
+ /**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* brute3(ListNode *headA, ListNode *headB){
+        ListNode *temp1=headA, *temp2=headB;
+        while(temp2){
+
+            while(temp1){
+                if(temp2 == temp1){
+                    return temp2;
+                }
+                temp1=temp1->next;
+            }
+            temp1=headA;
+            temp2=temp2->next;
+        }
+
+        return nullptr;
+
+    }
+ 
+    int len(ListNode *head){
+        int cnt=0;
+        ListNode *temp=head;
+        while(temp){
+            cnt++;
+            temp=temp->next;
+        }
+        return cnt;
+    }
+
+    ListNode* brute4(ListNode *headA, ListNode *headB){
+        ListNode *big;
+        ListNode *small;
+        int len1 = len(headA);
+        int len2 = len(headB);
+        int n = abs(len1-len2);
+        if(len1>len2){
+            big=headA;
+            small = headB;
+        }else{
+            big=headB;
+            small = headA;
+        }
+        for(int i=0;i<n;i++){
+            big=big->next;
+        }
+
+        while(big && small){
+            if(big == small){
+                return big;
+            }
+            big=big->next;
+            small=small->next;
+        }
+        return nullptr;
+    }
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        // return brute1(headA, headB);
+        // return brute2(headA, headB);
+        // return brute3(headA, headB);
+        return brute4(headA, headB);
+         
+    }
+};
